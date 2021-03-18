@@ -1,0 +1,84 @@
+secret_word1 = "Respiratory system"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = False
+
+input("Student's Name: ")
+print("Welcome to our Human Body Systems Game."
+      " You will have 3 chances to guess all 11 body systems using the hints provided. ")
+input("If you are ready to begin, Type Yes!")
+
+print("Body System 1 hint: What body system uses the trachea, diaphragms and our lungs to take in vital oxygen and expel carbon dioxide through breathing?")
+
+while guess != secret_word1 and not(out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter guess: ")
+        guess_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Try again Next Time")
+else:
+    print("Correct")
+
+secret_word2 = "Endocrine system"
+guess2 = ""
+guess2_count = 0
+guess2_limit = 3
+out_of_guesses = False
+
+print("Body Systems 2 hint: What body System Secretes Hormones into the blood to maintain homeostasis?")
+
+while guess2 != secret_word2 and not(out_of_guesses):
+    if guess2_count < guess2_limit:
+        guess2 = input("Enter guess: ")
+        guess2_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Try again Next Time")
+else:
+    print("Correct")
+
+secret_word3 = "Circulatory system"
+guess3 = ""
+guess3_count = 0
+guess3_limit = 3
+out_of_guesses = False
+
+print("Body Systems 3 hint: What body system uses the heart to pump blood nutrients oxygen and carbon dioxide and hormones around the body?")
+
+while guess3 != secret_word3 and not(out_of_guesses):
+    if guess3_count < guess2_limit:
+        guess3 = input("Enter guess: ")
+        guess3_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Try again Next Time")
+else:
+    print("Correct")
+
+secret_word4 = "Digestive system"
+guess4 = ""
+guess4_count = 0
+guess4_limit = 3
+out_of_guesses = False
+
+print("Body Systems 4 hint: Which body systems is involved in the breaking down of food, absorption of nutrients and the removal of waste?")
+
+while guess4 != secret_word4 and not(out_of_guesses):
+    if guess4_count < guess2_limit:
+        guess4 = input("Enter guess: ")
+        guess4_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Try again Next Time")
+else:
+    print("Correct")
